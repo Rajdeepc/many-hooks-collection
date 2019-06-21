@@ -1,21 +1,29 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from "react";
 
+export const useFetch = (url,dependencies) => {
+  const [isLoading, setLoading] = useState(false);
+  const [fetchData, setFetchData] = useState(null);
 
-const useFetch = (api) => {
-    const [loading, setLoading] = useState(false);
-    const [data, setData] = useState(null);
-
+  useEffect(() => {
     setLoading(true);
-    fetch(api)
-    .then(res => {
-        if(res.length) {
-            setLoading(false);
-            setData(data)
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch");
         }
-    }).catch(() => {
+        return response.json();
+      })
+      .then(data => {
+        if (res.length) {
+          setLoading(false);
+          setFetchData(data);
+        }
+      })
+      .catch(() => {
         console.log("Error from API" + err);
-        setLoading(false)
-    })
-}
+        setLoading(false);
+      });
+  },dependencies);
 
-export default useFetch;
+  return [isLoading, fetchData];
+};

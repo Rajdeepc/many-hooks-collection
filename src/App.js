@@ -1,24 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useFetch } from '../src/hooks/useFetchHook/useFetch';
+
 
 function App() {
+
+  const [isLoading, fetchData] = useFetch('api',[]);
+  /** you have  fetchData data here*/
+  /** please check for null pointer of fetchdata since it is initialised as null in the custom hook */
+  const selectedData = fetchData ? fetchData.results : null;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
