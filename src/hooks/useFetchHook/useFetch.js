@@ -14,12 +14,12 @@ export const useFetch = (url,dependencies) => {
         return response.json();
       })
       .then(data => {
-        if (res.length) {
+        if (data.length) {
           setLoading(false);
           setFetchData(data);
         }
       })
-      .catch(() => {
+      .catch((err) => {
         console.log("Error from API" + err);
         setLoading(false);
       });
