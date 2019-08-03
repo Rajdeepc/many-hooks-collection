@@ -3,6 +3,7 @@ import { useFetch } from '../src/hooks/useFetchHook/useFetch';
 import { useWindowResize } from '../src/hooks/useWindowSizeCalculatorHook/useWindowResizeCalculator';
 import useCounterReducerHook from '../src/hooks/useReducerHook/useReducerHook';
 import MyMemo from  './hooks/useMemo/myMemo';
+import Parent from './hooks/lazyAPI/parent';
 
 function App() {
   const width =  useWindowResize();
@@ -17,7 +18,7 @@ function App() {
         {/* <p>{count}</p> */}
         {/* {useCounterReducerHook()}
         <h1>SHowing window resize width: {width}</h1> */}
-        <MyMemo />
+        <Parent />
     </div>
   );
 }
