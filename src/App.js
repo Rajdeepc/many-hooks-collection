@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
 import { useFetch } from '../src/hooks/useFetchHook/useFetch';
 import { useWindowResize } from '../src/hooks/useWindowSizeCalculatorHook/useWindowResizeCalculator';
 import useCounterReducerHook from '../src/hooks/useReducerHook/useReducerHook';
+import MyMemo from  './hooks/useMemo/myMemo';
 
 function App() {
   const width =  useWindowResize();
@@ -15,8 +15,9 @@ function App() {
   return (
     <div className="App">
         {/* <p>{count}</p> */}
-        {useCounterReducerHook()}
-        <h1>SHowing window resize width: {width}</h1>
+        {/* {useCounterReducerHook()}
+        <h1>SHowing window resize width: {width}</h1> */}
+        <MyMemo />
     </div>
   );
 }
