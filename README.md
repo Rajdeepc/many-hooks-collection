@@ -10,6 +10,8 @@
     - This custom hook can be used as a reusable hook to show loading icon before your api resolves
 ### 5. useWindowResize
     - This custom hook can be used as a reusable hook to get width of DOM window
+### 6. useReactNativeAndroidBackHandler
+    - This custom hook can be used as a BackHandler hook in React native Android for adding and removing event handlers 
 
 
 
