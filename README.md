@@ -12,7 +12,8 @@
     - This custom hook can be used as a reusable hook to get width of DOM window
 ### 6. useReactNativeAndroidBackHandler
     - This custom hook can be used as a BackHandler hook in React native Android for adding and removing event handlers 
-
+### 7. useScrollIntoViewHook
+    - This custom hook can be used as a reusable hook to scroll to an element in the view
 
 
 ### Feel free to use. Pull requests are welcome. Hit star if you like  🖐
