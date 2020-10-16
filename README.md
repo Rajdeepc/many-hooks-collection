@@ -1,6 +1,6 @@
 
 <div align="center">
-  <a href="#"><img src="https://github.com/Rajdeepc/hooks-collection/blob/master/github/React-hooks.png?raw=true" alt="hooks-collection"></a>
+  <a href="#"><img src="https://github.com/Rajdeepc/hooks-collection/blob/master/React-hooks.png?raw=true" alt="hooks-collection"></a>
   <br>
   <br>
   <p>
