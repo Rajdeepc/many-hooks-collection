@@ -30,6 +30,8 @@
     - This custom hook can be used as a BackHandler hook in React native Android for adding and removing event handlers 
 ### useScrollIntoViewHook
     - This custom hook can be used as a reusable hook to scroll to an element in the view
+### useClickOutside
+    - This custom hook can be used as a reusable hook to detect when a click happens outside of a component
 
 
 
